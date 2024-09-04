@@ -1,0 +1,25 @@
+A = {19, 22, 24, 20, 25, 26}
+B = {19, 22, 20, 25, 26, 24, 28, 27}
+
+A_union_B = A.union(B)
+print("A union B:", A_union_B)
+
+A_intersection_B = A.intersection(B)
+print("A intersection B:", A_intersection_B)
+
+A_is_subset_of_B = A.issubset(B)
+print("Is A subset of B:", A_is_subset_of_B)
+
+A_and_B_are_disjoint = A.isdisjoint(B)
+print("Are A and B disjoint sets:", A_and_B_are_disjoint)
+
+A_union_B = A.union(B)
+B_union_A = B.union(A)
+print("A union B:", A_union_B)
+print("B union A:", B_union_A)
+
+A_symmetric_difference_B = A.symmetric_difference(B)
+print("Symmetric difference between A and B:", A_symmetric_difference_B)
+
+del A
+del B
